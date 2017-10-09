@@ -13,7 +13,7 @@ const uploadFile = (z, bundle) => {
   // (form-data doesn't play nicely with z.request)
   formData.append('file', request(bundle.inputData.file),
     { 
-        filename: bundle.inputData.filename,
+        filename: bundle.inputData.filename
         //FormData also supports contentType and other form part data.
     });
 
